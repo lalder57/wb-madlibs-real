@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <body>
-    <form action="/madlib">
-      <p>Please complete the following form:</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game | Madlibs!</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
 
-      <label for="person">Enter a name:</label>
+  <body>
+    <form action="/madlib" id="game-form">
+      <h1>Please complete the following form:</h1>
+
+      <label for="person" id="person-label">Enter a name:</label>
       <input type="text" name="person" id="person" /><br>
 
-      <label for="color-input">Enter a color:</label>
+      <label for="color-input" id="person-label">Enter a color:</label>
       <input type="text" name="color" id="color-input" /><br>
-
+      
       <p>Choose one of the following nouns:</p>
+      
+      <div id="radio-buttons">
 
-      <input type="radio" id="cat" name="noun" value="cat">
-      <label for="cat">cat</label><br>
+        <input type="radio" id="cat" name="noun" value="cat">
+        <label for="cat" class="radio-button-labels">cat</label><br>
 
-      <input type="radio" id="dog" name="noun" value="dog">
-      <label for="dog">dog</label><br>
+        <input type="radio" id="dog" name="noun" value="dog">
+        <label for="dog" class="radio-button-labels">dog</label><br>
 
-      <input type="radio" id="elephant" name="noun" value="elephant">
-      <label for="elephant">elephant</label><br>
+        <input type="radio" id="elephant" name="noun" value="elephant">
+        <label for="elephant" class="radio-button-labels">elephant</label><br>
 
-      <input type="radio" id="gorilla" name="noun" value="gorilla">
-      <label for="gorilla">gorilla</label><br>
+        <input type="radio" id="gorilla" name="noun" value="gorilla">
+        <label for="gorilla" class="radio-button-labels">gorilla</label><br>
+      </div>
 
-      <label for="adjective">Choose an adjective from the list below:</label>
+      <label for="adjective" id="select-label">Choose an adjective from the list below:</label>
       <select name="adjective" id="adjective">
         <option value="">select your option</option>
         <option value="spunky">spunky</option>
@@ -33,7 +43,10 @@
         <option value="horrendous">horrendous</option>
       </select><br>
 
-      <input type="submit" value="Click Me!">
+      <div id="form-buttons">
+        <input type="submit" value="Click Me!" id="submit-button">
+        <input type="reset" value="Reset All Categories" id="reset-button">
+      </div>
 
 
     </form>

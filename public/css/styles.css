@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif;
+  font-size: 15px;
+  background-color: rgb(181, 181, 234);
+}
+
+#greeting-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+
+#name-input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+#game-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+
+#person, #color-input, #adjective, #submit-button, #reset-button {
+  /* border-radius: 2px; */
+  padding: 3px;
+}
+
+#radio-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.radio-button-labels {
+  margin-right: 10px;
+}
+
+
+#form-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-betweem;
+  align-items: start;
+  margin-top: 10px;
+}
+
+#submit-button {
+  margin-right: 10px;
+}
+
+p, #person-label, #color-label, #select-label {
+  font-size: 15px;
+  font-weight: 550;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 5px;
+}
+
+#compliment-text, #play-game-text {
+  font-weight:100;
+  margin-bottom: 10px;
+}
+
+#compliment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+
+#madlib-text {
+  font-weight: 100;
+}

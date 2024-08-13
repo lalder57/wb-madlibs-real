@@ -10,16 +10,18 @@
 
   <body>
     <h1>Nice to meet you, {{ name }}.</h1>
-    <p>You're very {{ compliment }}</p>
+    <p id="compliment-text">You're very {{ compliment }}</p>
 
-    <form action="/game">
-      <p>Would you like to play a game?</p>
+    <form action="/game" id="compliment-form">
+      <p id="play-game-text">Would you like to play a game?</p>
 
-      <input type="radio" name="play" value="yes" id="yes-input" />
-      <label for="yes-input">Yes</label>
+      <div id="radio-buttons">
+        <input type="radio" name="play" value="yes" id="yes-input" />
+        <label for="yes-input" class="radio-button-labels">Yes</label>
 
-      <input type="radio" name="play" value="no" id="no-input" />
-      <label for="no-input">No</label>
+        <input type="radio" name="play" value="no" id="no-input" />
+        <label for="no-input" class="radio-button-labels">No</label>
+      </div>
 
       <button type="submit">Let's Go!</button>
     </form>
